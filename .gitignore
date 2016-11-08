@@ -9,3 +9,13 @@
 /Wibci.Xamarin.Images.iOS/obj/Debug
 /Wibci.Xamarin.Images.UWP/bin/Debug
 /Wibci.Xamarin.Images.UWP/obj/Debug
+/nuget
+/Wibci.Xamarin.Images/Wibci.Xamarin.Images/bin/Release
+/Wibci.Xamarin.Images/Wibci.Xamarin.Images/obj/Release
+/Wibci.Xamarin.Images/Wibci.Xamarin.Images.Droid/bin/Release
+/Wibci.Xamarin.Images/Wibci.Xamarin.Images.Droid/obj/Release
+/Wibci.Xamarin.Images.iOS/bin/Release
+/Wibci.Xamarin.Images.iOS/obj/Release/build-signature
+/Wibci.Xamarin.Images.iOS/obj/Release
+/Wibci.Xamarin.Images.UWP/bin/Release
+/Wibci.Xamarin.Images.UWP/obj/Release
