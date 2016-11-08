@@ -1,7 +1,7 @@
 # Wibci.Xamarin.Images
 Some handy xamarin cross platform (Android / iOS / UWP) commands for image manipulation
 
-nuget: https://www.nuget.org/packages/Wibci.Xamarin.Images/
+- Available on NuGet: [![NuGet](https://img.shields.io/nuget/v/Wibci.Xamarin.Images.svg?label=NuGet)](https://www.nuget.org/packages/Wibci.Xamarin.Images/)
 
 - ResizeImageCommand
 
