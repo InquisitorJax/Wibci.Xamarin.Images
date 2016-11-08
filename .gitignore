@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/Wibci.Xamarin.Images/Wibci.Xamarin.Images/bin/Debug
+/Wibci.Xamarin.Images/Wibci.Xamarin.Images/obj/Debug
+/Wibci.Xamarin.Images/Wibci.Xamarin.Images.Droid/obj/Debug
+/Wibci.Xamarin.Images.iOS/obj/Debug
+/Wibci.Xamarin.Images.UWP/bin/Debug
+/Wibci.Xamarin.Images.UWP/obj/Debug
