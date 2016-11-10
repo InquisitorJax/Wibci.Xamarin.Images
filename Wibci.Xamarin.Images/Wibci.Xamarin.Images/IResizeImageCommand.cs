@@ -15,6 +15,8 @@ namespace Wibci.Xamarin.Images
 
     public class ResizeImageResult : DeviceCommandResult
     {
+        public int ResizedHeight { get; set; }
         public byte[] ResizedImage { get; set; }
+        public int ResizedWidth { get; set; }
     }
 }

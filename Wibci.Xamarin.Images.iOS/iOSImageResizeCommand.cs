@@ -44,17 +44,17 @@ namespace Wibci.Xamarin.Images.iOS
             nfloat resizeWidth = 0;
             //
 
-            if (originalHeight > originalWidth) // Höhe (71 für Avatar) ist Master
+            if (originalHeight > originalWidth) // Height used
             {
                 resizeHeight = height;
-                nfloat teiler = originalHeight / height;
-                resizeWidth = originalWidth / teiler;
+                nfloat ratio = originalHeight / height;
+                resizeWidth = originalWidth / ratio;
             }
-            else // Breite (61 for Avatar) ist Master
+            else // Width used
             {
                 resizeWidth = width;
-                nfloat teiler = originalWidth / width;
-                resizeHeight = originalHeight / teiler;
+                nfloat ratio = originalWidth / width;
+                resizeHeight = originalHeight / ratio;
             }
             //
             float resizeWidthEx = (float)resizeWidth;
@@ -65,9 +65,15 @@ namespace Wibci.Xamarin.Images.iOS
             var resizedImage = UIGraphics.GetImageFromCurrentImageContext();
             UIGraphics.EndImageContext();
             //
-            var bytesImagen = resizedImage.AsJPEG().ToArray();
+            var bytesImage = resizedImage.AsJPEG().ToArray();
             resizedImage.Dispose();
-            return Task.FromResult(new ResizeImageResult { ResizedImage = bytesImagen });
+            var result = new ResizeImageResult
+            {
+                ResizedImage = bytesImage,
+                ResizedHeight = (int)resizeHeightEx,
+                ResizedWidth = (int)resizeWidthEx
+            };
+            return Task.FromResult(result);
         }
     }
 }

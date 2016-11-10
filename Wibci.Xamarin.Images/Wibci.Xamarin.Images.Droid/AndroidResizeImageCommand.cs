@@ -42,7 +42,15 @@ namespace Wibci.Xamarin.Images.Droid
             using (MemoryStream ms = new MemoryStream())
             {
                 resizedImage.Compress(Bitmap.CompressFormat.Jpeg, 100, ms);
-                return Task.FromResult(new ResizeImageResult { ResizedImage = ms.ToArray() });
+
+                var result = new ResizeImageResult
+                {
+                    ResizedImage = ms.ToArray(),
+                    ResizedHeight = (int)resizeHeight,
+                    ResizedWidth = (int)resizeWidth
+                };
+
+                return Task.FromResult(result);
             }
         }
     }

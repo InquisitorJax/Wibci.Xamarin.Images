@@ -47,7 +47,15 @@ namespace Wibci.Xamarin.Images.UWP
                     resizedStream.Seek(0);
                     var outBuffer = new byte[resizedStream.Size];
                     await resizedStream.ReadAsync(outBuffer.AsBuffer(), (uint)resizedStream.Size, InputStreamOptions.None);
-                    return new ResizeImageResult { ResizedImage = outBuffer };
+
+                    var result = new ResizeImageResult
+                    {
+                        ResizedImage = outBuffer,
+                        ResizedHeight = (int)aspectHeight,
+                        ResizedWidth = (int)aspectWidth
+                    };
+
+                    return result;
                 }
             }
 
