@@ -19,6 +19,16 @@ Sample code:
   
 `}`
 
+Platform implementations:
+
+Android:
+`DependencyService.Register<IResizeImageCommand, AndroidResizeImageCommand>();`
+
+iOS
+`DependencyService.Register<IResizeImageCommand, iOSImageResizeCommand>();`
+
+UWP:
+`DependencyService.Register<IResizeImageCommand, UWPResizeImageCommand>();`
 
 NOTE: For resizing images that come from the device or camera - check out James Montemagno's Xamarin Media Plugin
 https://github.com/jamesmontemagno/MediaPlugin
