@@ -107,6 +107,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UWPAnalyseImageCommand.cs" />
     <Compile Include="UWPImageResizeCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Wibci.Xamarin.Images.UWP.rd.xml" />

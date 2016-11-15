@@ -2031,12 +2031,12 @@
           }
         }
       },
-      "Wibci.LogicCommand/1.0.1": {
+      "Wibci.LogicCommand/1.0.2": {
         "compile": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         }
       }
     },
@@ -4149,12 +4149,12 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Wibci.LogicCommand/1.0.1": {
+      "Wibci.LogicCommand/1.0.2": {
         "compile": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         }
       }
     },
@@ -6306,12 +6306,12 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Wibci.LogicCommand/1.0.1": {
+      "Wibci.LogicCommand/1.0.2": {
         "compile": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         }
       }
     },
@@ -8433,12 +8433,12 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Wibci.LogicCommand/1.0.1": {
+      "Wibci.LogicCommand/1.0.2": {
         "compile": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         }
       }
     },
@@ -10599,12 +10599,12 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Wibci.LogicCommand/1.0.1": {
+      "Wibci.LogicCommand/1.0.2": {
         "compile": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         }
       }
     },
@@ -12726,12 +12726,12 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Wibci.LogicCommand/1.0.1": {
+      "Wibci.LogicCommand/1.0.2": {
         "compile": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         }
       }
     },
@@ -14892,12 +14892,12 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Wibci.LogicCommand/1.0.1": {
+      "Wibci.LogicCommand/1.0.2": {
         "compile": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/Wibci.Core.dll": {}
+          "lib/uap10.0/Wibci.LogicCommand.dll": {}
         }
       }
     }
@@ -21069,22 +21069,23 @@
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "Wibci.LogicCommand/1.0.1": {
-      "sha512": "8zRT0ihpE50d+afACmMoUhGUZ/NntTyaeOQ0khEQYfs6bi/ef9Q9MIkgwA8Cizd0HDjJKWrvOBL3hs7TsnlyAw==",
+    "Wibci.LogicCommand/1.0.2": {
+      "sha512": "ELuhWS89HlHDEB+9MJBmezGR6QFy7DsbG0ltwrn9ku4dSJWv8I7N5ZVfKFWucbbZvTLa5DfQLu/qe7EepmZgYQ==",
       "type": "package",
-      "path": "Wibci.LogicCommand/1.0.1",
+      "path": "Wibci.LogicCommand/1.0.2",
       "files": [
-        "Wibci.LogicCommand.1.0.1.nupkg.sha512",
+        "Wibci.LogicCommand.1.0.2.nupkg.sha512",
         "Wibci.LogicCommand.nuspec",
-        "lib/Wibci.Core.dll",
-        "lib/uap10.0/Wibci.Core.dll"
+        "lib/Wibci.LogicCommand.dll",
+        "lib/portable-net45+win8/Wibci.LogicCommand.dll",
+        "lib/uap10.0/Wibci.LogicCommand.dll"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
-      "Wibci.LogicCommand >= 1.0.1"
+      "Wibci.LogicCommand >= 1.0.2"
     ],
     "UAP,Version=v10.0": []
   }
