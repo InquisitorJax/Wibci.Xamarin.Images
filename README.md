@@ -7,17 +7,16 @@ Some handy xamarin cross platform (Android / iOS / UWP) commands for image manip
 
 Sample code:
 
-`var resizeImage = DependencyService.Get<IResizeImageCommand>();`
+```C#
+var resizeImage = DependencyService.Get<IResizeImageCommand>();
 
-`var resizeResult = await resizeImage.ExecuteAsync(new ResizeImageContext { Height = 130, Width = 280, OriginalImage = pictureResult.Image });`
+var resizeResult = await resizeImage.ExecuteAsync(new ResizeImageContext { Height = 130, Width = 280, OriginalImage = pictureResult.Image });
 
-`if (resizeResult.TaskResult == TaskResult.Success)`
-
-`{`
-
-  `Model.Logo = resizeResult.ResizedImage;`
-  
-`}`
+if (resizeResult.TaskResult == TaskResult.Success)
+{
+  Model.Logo = resizeResult.ResizedImage;
+}
+```
 
 Platform implementations:
 
