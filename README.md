@@ -31,3 +31,5 @@ UWP:
 
 NOTE: For resizing images that come from the device or camera - check out James Montemagno's Xamarin Media Plugin
 https://github.com/jamesmontemagno/MediaPlugin
+
+Also - for a more comprehensive set of image features - check out https://github.com/humbertojaimes/DevKit.Xamarin.ImageKit
