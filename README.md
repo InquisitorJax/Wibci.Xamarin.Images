@@ -1,11 +1,15 @@
 # Wibci.Xamarin.Images
-Some handy xamarin cross platform (Android / iOS / UWP) commands for image manipulation
+Some handy xamarin cross platform (Android / iOS / UWP) commands for byte[] image manipulation.
+See the Sample App for example usages.
 
 - Available on NuGet: [![NuGet](https://img.shields.io/nuget/v/Wibci.Xamarin.Images.svg?label=NuGet)](https://www.nuget.org/packages/Wibci.Xamarin.Images/)
 
-- ResizeImageCommand
+- ResizeImageCommand: resize an image with specific width / height. Maintains aspect ratio.
+- AnalyseImageCommand: Get the height, width and size of a given image
+- ConvertImageCommand: Convert images between jpeg and png formats
+- ImageTools: Methods for all 3 above
 
-Sample code:
+Sample code: Resize an image
 
 ```C#
 var resizeImage = DependencyService.Get<IResizeImageCommand>();
@@ -29,7 +33,3 @@ iOS
 UWP:
 `DependencyService.Register<IResizeImageCommand, UWPResizeImageCommand>();`
 
-NOTE: For resizing images that come from the device or camera - check out James Montemagno's Xamarin Media Plugin
-https://github.com/jamesmontemagno/MediaPlugin
-
-Also - for a more comprehensive set of image features - check out https://github.com/humbertojaimes/DevKit.Xamarin.ImageKit
