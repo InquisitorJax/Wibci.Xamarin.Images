@@ -5,16 +5,11 @@ namespace Wibci.Xamarin.Images
     public enum ImageFormat
     {
         Png,
-        Jpg
+        Jpeg
     }
 
     public interface IConvertImageCommand : IAsyncLogicCommand<ConvertImageContext, ConvertImageResult>
     {
-    }
-
-    public class ConvertImageResult : TaskCommandResult
-    {
-        public byte[] ConvertedImage { get; set; }
     }
 
     public class ConvertImageContext
@@ -29,5 +24,10 @@ namespace Wibci.Xamarin.Images
         public ImageFormat Format { get; set; }
         public byte[] OriginalImage { get; set; }
         public int Quality { get; set; }
+    }
+
+    public class ConvertImageResult : TaskCommandResult
+    {
+        public byte[] ConvertedImage { get; set; }
     }
 }
