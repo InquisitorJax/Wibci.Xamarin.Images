@@ -27,7 +27,7 @@ namespace Wibci.Xamarin.Images.Droid
 #if DEBUG
                 throw ex;
 #else
-                return Task.FromResult(new ResizeImageResult
+                return Task.FromResult(new ConvertImageResult
                 {
                     TaskResult = TaskResult.Failed,
                     Notification = new Notification(ex.Message)

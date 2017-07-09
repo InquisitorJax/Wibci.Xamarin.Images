@@ -14,9 +14,6 @@ namespace Wibci.Xamarin.Images.UWP
         {
             try
             {
-
-               
-
                 //var memStream = new MemoryStream(request.OriginalImage);
                 byte[] retConvertedImage;
 
@@ -39,22 +36,20 @@ namespace Wibci.Xamarin.Images.UWP
                     if (request.Format == ImageFormat.Png)
                     {
                         encoder = await BitmapEncoder.CreateAsync(formatId, imageStream);
-
                     }
                     else
                     {
                         BitmapPropertySet propertySet = new BitmapPropertySet();
                         var qualityValue = new BitmapTypedValue(request.Quality * .01, Windows.Foundation.PropertyType.Single);
                         propertySet.Add("ImageQuality", qualityValue);
-                       
-                        encoder = await BitmapEncoder.CreateAsync(formatId, imageStream, propertySet); 
+
+                        encoder = await BitmapEncoder.CreateAsync(formatId, imageStream, propertySet);
                     }
                     encoder.SetPixelData(decoder.BitmapPixelFormat, decoder.BitmapAlphaMode, decoder.OrientedPixelWidth, decoder.OrientedPixelHeight, decoder.DpiX, decoder.DpiY, detachedPixelData);
 
                     await encoder.FlushAsync();
                     retConvertedImage = new byte[imageStream.AsStream().Length];
                     await imageStream.AsStream().ReadAsync(retConvertedImage, 0, retConvertedImage.Length);
-
                 }
 
                 return new ConvertImageResult { ConvertedImage = retConvertedImage };
@@ -64,7 +59,7 @@ namespace Wibci.Xamarin.Images.UWP
 #if DEBUG
                 throw ex;
 #else
-                return new ResizeImageResult
+                return new ConvertImageResult
                 {
                     TaskResult = TaskResult.Failed,
                     Notification = new Notification(ex.Message)
