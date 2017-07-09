@@ -5,7 +5,8 @@ namespace Wibci.Xamarin.Images
     public enum ImageOrientation
     {
         Landscape,
-        Portrait
+        Portrait,
+        Square
     }
 
     public interface IAnalyseImageCommand : IAsyncLogicCommand<AnalyseImageContext, AnalyseImageResult>

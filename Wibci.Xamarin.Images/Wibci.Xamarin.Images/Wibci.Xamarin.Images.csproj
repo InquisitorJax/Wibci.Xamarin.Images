@@ -35,13 +35,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DimensionHelper.cs" />
     <Compile Include="IAnalyseImageCommand.cs" />
+    <Compile Include="IImageConverter.cs" />
+    <Compile Include="IImageTools.cs" />
     <Compile Include="IResizeImageCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Wibci.LogicCommand, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Wibci.LogicCommand.1.0.2\lib\Wibci.LogicCommand.dll</HintPath>
+    <Reference Include="Wibci.LogicCommand, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Wibci.LogicCommand.1.1.0\lib\Wibci.LogicCommand.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
