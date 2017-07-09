@@ -32,12 +32,14 @@
                 <Label Text="{Binding ImageHeight, StringFormat='Image Height: {0}'}}" />
                 <Label Text="{Binding ImageWidth, StringFormat='Image Width: {0}'}}" />
                 <Label Text="{Binding Orientation, StringFormat='Image Orientation: {0}'}}" />
+                <Label Text="{Binding Size, StringFormat='Size in KB: {0}'}}" />
 
                 <Label Margin="0, 20, 0,0" Text="New Image Dimension Limit" />
                 <Entry Keyboard="Numeric" Text="{Binding NewImageDimensionLimit}" />
-                <Label Text="Upscale if image is small than requested size" />
+                <Label Text="Upscale if image is smaller than requested size" />
                 <Switch IsToggled="{Binding UpscaleImage}" />
             </StackLayout>
+            
         </Grid>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage> 

@@ -19,6 +19,7 @@ namespace Wibci.Xamarin.Images.iOS
 
                 retResult.Height = (uint)image.Size.Height;
                 retResult.Width = (uint)image.Size.Width;
+                retResult.SizeInKB = imageData.SizeInKB();
 
                 if (retResult.Width == retResult.Height)
                 {

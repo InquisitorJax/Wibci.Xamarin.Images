@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DimensionHelper.cs" />
+    <Compile Include="ImageHelper.cs" />
     <Compile Include="IAnalyseImageCommand.cs" />
     <Compile Include="IImageConverter.cs" />
     <Compile Include="IImageTools.cs" />

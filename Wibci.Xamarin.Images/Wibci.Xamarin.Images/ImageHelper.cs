@@ -8,9 +8,9 @@ namespace Wibci.Xamarin.Images
         public uint Width { get; set; }
     }
 
-    public class DimensionHelper
+    public static class ImageHelper
     {
-        public static Dimension Resize(Dimension originalDimension, Dimension newDimensions, bool upscale = false)
+        public static Dimension Resize(this Dimension originalDimension, Dimension newDimensions, bool upscale = false)
         {
             Dimension retResult = originalDimension;
 
@@ -32,6 +32,18 @@ namespace Wibci.Xamarin.Images
             }
 
             return retResult;
+        }
+
+        public static double SizeInKB(this byte[] image)
+        {
+            double retSize = 0;
+
+            if (image != null)
+            {
+                retSize = image.Length / 1024;
+            }
+
+            return retSize;
         }
     }
 }

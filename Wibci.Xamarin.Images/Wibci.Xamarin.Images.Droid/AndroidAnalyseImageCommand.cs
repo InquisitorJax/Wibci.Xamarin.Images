@@ -17,6 +17,7 @@ namespace Wibci.Xamarin.Images.Droid
                 Bitmap originalImage = BitmapFactory.DecodeByteArray(imageData, 0, imageData.Length);
                 retResult.Height = (uint)originalImage.Height;
                 retResult.Width = (uint)originalImage.Width;
+                retResult.SizeInKB = imageData.SizeInKB();
 
                 if (originalImage.Width == originalImage.Height)
                 {

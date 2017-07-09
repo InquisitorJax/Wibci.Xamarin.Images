@@ -38,6 +38,14 @@ namespace Wibci.Xamarin.Images.SampleApp
             set { SetProperty(ref _imageWidth, value); }
         }
 
+        private string _size;
+
+        public string Size
+        {
+            get { return _size; }
+            set { SetProperty(ref _size, value); }
+        }
+
         public byte[] Logo
         {
             get { return _logo; }
@@ -95,6 +103,7 @@ namespace Wibci.Xamarin.Images.SampleApp
                     ImageWidth = analyseResult.Width.ToString();
                     ImageHeight = analyseResult.Height.ToString();
                     Orientation = analyseResult.Orientaion.ToString();
+                    Size = analyseResult.SizeInKB.ToString();
                 }
                 else
                 {

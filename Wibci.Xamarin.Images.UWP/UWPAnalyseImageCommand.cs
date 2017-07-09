@@ -19,8 +19,9 @@ namespace Wibci.Xamarin.Images.UWP
                 IRandomAccessStream imageStream = memStream.AsRandomAccessStream();
                 var decoder = await BitmapDecoder.CreateAsync(imageStream);
 
-                retResult.Height = decoder.PixelHeight;
-                retResult.Width = decoder.PixelWidth;
+                retResult.Height = decoder.OrientedPixelHeight;
+                retResult.Width = decoder.OrientedPixelWidth;
+                retResult.SizeInKB = request.Image.SizeInKB();
                 if (retResult.Width == retResult.Height)
                 {
                     retResult.Orientaion = ImageOrientation.Square;

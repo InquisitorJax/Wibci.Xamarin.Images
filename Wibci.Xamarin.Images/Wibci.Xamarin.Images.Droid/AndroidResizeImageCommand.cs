@@ -22,7 +22,7 @@ namespace Wibci.Xamarin.Images.Droid
 
                 var originalDim = new Dimension { Height = (uint)originalImage.Height, Width = (uint)originalImage.Width };
                 var resizeRequestDim = new Dimension { Height = (uint)request.Height, Width = (uint)request.Width };
-                var newDimensions = DimensionHelper.Resize(originalDim, resizeRequestDim, request.UpScaleIfImageIsSmaller);
+                var newDimensions = ImageHelper.Resize(originalDim, resizeRequestDim, request.UpScaleIfImageIsSmaller);
 
                 Bitmap resizedImage = Bitmap.CreateScaledBitmap(originalImage, (int)newDimensions.Width, (int)newDimensions.Height, false);
 
@@ -40,22 +40,6 @@ namespace Wibci.Xamarin.Images.Droid
 
                 return Task.FromResult(result);
 
-                //using (MemoryStream ms = new MemoryStream())
-                //{
-                //    resizedImage.Compress(Bitmap.CompressFormat.Png, 100, ms);
-
-                //    var result = new ResizeImageResult
-                //    {
-                //        ResizedImage = ms.ToArray(),
-                //        ResizedHeight = (int)newDimensions.Height,
-                //        ResizedWidth = (int)newDimensions.Width
-                //    };
-
-                //    resizedImage.Recycle();
-                //    GC.Collect();
-
-                //    return Task.FromResult(result);
-                //}
             }
             catch (Exception ex)
             {

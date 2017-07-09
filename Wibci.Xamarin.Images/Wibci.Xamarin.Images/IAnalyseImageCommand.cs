@@ -23,5 +23,7 @@ namespace Wibci.Xamarin.Images
         public uint Height { get; set; }
         public ImageOrientation Orientaion { get; set; }
         public uint Width { get; set; }
+
+        public double SizeInKB { get; set; }
     }
 }
