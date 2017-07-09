@@ -31,6 +31,8 @@ namespace Wibci.Xamarin.Images.SampleApp.Droid
 
             DependencyService.Register<IAnalyseImageCommand, AndroidAnalyseImageCommand>();
             DependencyService.Register<IResizeImageCommand, AndroidResizeImageCommand>();
+            DependencyService.Register<IConvertImageCommand, AndroidConvertImageCommand>();
+            DependencyService.Register<IImageTools, AndroidImageTools>();
             CrossMedia.Current.Initialize();
 
             LoadApplication(new App());

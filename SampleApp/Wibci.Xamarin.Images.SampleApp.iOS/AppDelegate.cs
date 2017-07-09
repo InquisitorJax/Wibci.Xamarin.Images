@@ -23,6 +23,8 @@ namespace Wibci.Xamarin.Images.SampleApp.iOS
         {
             DependencyService.Register<IAnalyseImageCommand, iOSAnalyseImageCommand>();
             DependencyService.Register<IResizeImageCommand, iOSImageResizeCommand>();
+            DependencyService.Register<IConvertImageCommand, iOSConvertImageCommand>();
+            DependencyService.Register<IImageTools, iOSImageTools>();
             CrossMedia.Current.Initialize();
 
             global::Xamarin.Forms.Forms.Init();

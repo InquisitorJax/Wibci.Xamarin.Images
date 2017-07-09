@@ -5,9 +5,9 @@ using Wibci.LogicCommand;
 
 namespace Wibci.Xamarin.Images.iOS
 {
-    public class iOSConvertImageCommand : AsyncLogicCommand<ImageConvertContext, ConvertImageResult>, IImageConverterCommand
+    public class iOSConvertImageCommand : AsyncLogicCommand<ConvertImageContext, ConvertImageResult>, IConvertImageCommand
     {
-        public override Task<ConvertImageResult> ExecuteAsync(ImageConvertContext request)
+        public override Task<ConvertImageResult> ExecuteAsync(ConvertImageContext request)
         {
             try
             {

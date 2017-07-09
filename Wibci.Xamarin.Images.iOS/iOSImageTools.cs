@@ -4,7 +4,7 @@ namespace Wibci.Xamarin.Images.iOS
 {
     public class iOSImageTools : IImageTools
     {
-        public async Task<ConvertImageResult> ConvertImageAsync(ImageConvertContext context)
+        public async Task<ConvertImageResult> ConvertImageAsync(ConvertImageContext context)
         {
             var convertCommand = new iOSConvertImageCommand();
             return await convertCommand.ExecuteAsync(context);

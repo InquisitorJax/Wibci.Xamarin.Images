@@ -5,13 +5,13 @@ using Wibci.LogicCommand;
 
 namespace Wibci.Xamarin.Images.Droid
 {
-    public class AndroidConvertImageCommand : AsyncLogicCommand<ImageConvertContext, ConvertImageResult>, IImageConverterCommand
+    public class AndroidConvertImageCommand : AsyncLogicCommand<ConvertImageContext, ConvertImageResult>, IConvertImageCommand
     {
-        public override Task<ConvertImageResult> ExecuteAsync(ImageConvertContext request)
+        public override Task<ConvertImageResult> ExecuteAsync(ConvertImageContext request)
         {
             try
             {
-                ConvertImageResult retResult = new ConvertImageResult();
+                var retResult = new ConvertImageResult();
 
                 Bitmap resultBitmap = BitmapFactory.DecodeByteArray(request.OriginalImage, 0, request.OriginalImage.Length);
 

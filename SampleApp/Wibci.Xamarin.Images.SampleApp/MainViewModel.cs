@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using System.Windows.Input;
 using Wibci.LogicCommand;
 using Xamarin.Forms;
+using System;
 
 namespace Wibci.Xamarin.Images.SampleApp
 {
@@ -23,7 +24,27 @@ namespace Wibci.Xamarin.Images.SampleApp
         public MainViewModel()
         {
             SelectPictureCommand = new DelegateCommand(SelectPicture);
+            ConvertImageCommand = new DelegateCommand(ConvertImage);
             NewImageDimensionLimit = "130";
+        }
+
+        private async void ConvertImage()
+        {
+            if (Logo != null)
+            {
+                var imageTools = DependencyService.Get<IImageTools>();
+
+                var convertResult = await imageTools.ConvertImageAsync(new ConvertImageContext(Logo, ImageFormat.Png));
+                if (convertResult.TaskResult == TaskResult.Success)
+                {
+                    ConvertedLogo = convertResult.ConvertedImage;
+                    ConvertedSize = ConvertedLogo.SizeInKB().ToString();
+                }
+            }
+            else
+            {
+                Message = "No Image to convert";
+            }
         }
 
         public string ImageHeight
@@ -46,10 +67,25 @@ namespace Wibci.Xamarin.Images.SampleApp
             set { SetProperty(ref _size, value); }
         }
 
+        private string _convertedSize;
+
+        public string ConvertedSize
+        {
+            get { return _convertedSize; }
+            set { SetProperty(ref _convertedSize, value); }
+        }
+
         public byte[] Logo
         {
             get { return _logo; }
             set { SetProperty(ref _logo, value); }
+        }
+
+        private byte[] _convertedLogo;
+        public byte[] ConvertedLogo
+        {
+            get { return _convertedLogo; }
+            set { SetProperty(ref _convertedLogo, value); }
         }
 
         public string Message
@@ -71,6 +107,8 @@ namespace Wibci.Xamarin.Images.SampleApp
         }
 
         public ICommand SelectPictureCommand { get; }
+
+        public ICommand ConvertImageCommand { get; }
 
         public bool UpscaleImage
         {

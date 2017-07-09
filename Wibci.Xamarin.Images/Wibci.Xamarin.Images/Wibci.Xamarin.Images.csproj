@@ -37,7 +37,7 @@
   <ItemGroup>
     <Compile Include="ImageHelper.cs" />
     <Compile Include="IAnalyseImageCommand.cs" />
-    <Compile Include="IImageConverter.cs" />
+    <Compile Include="IImageConvertCommand.cs" />
     <Compile Include="IImageTools.cs" />
     <Compile Include="IResizeImageCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

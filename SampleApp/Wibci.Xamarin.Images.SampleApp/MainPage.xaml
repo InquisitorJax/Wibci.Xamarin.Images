@@ -39,7 +39,19 @@
                 <Label Text="Upscale if image is smaller than requested size" />
                 <Switch IsToggled="{Binding UpscaleImage}" />
             </StackLayout>
-            
+            <StackLayout Grid.Row="1">
+                <Button Text="Convert Jpeg to Png" Command="{Binding ConvertImageCommand}" />
+                <Image HeightRequest="100"
+                       HorizontalOptions="CenterAndExpand"
+                       Source="{Binding ConvertedLogo,
+                                        Converter={StaticResource bisc},
+                                        ConverterParameter=icon}"
+                       WidthRequest="100" />
+                <Label Text="{Binding ConvertedSize, StringFormat='Converted Size in KB: {0}'}}" />
+            </StackLayout>
+                         
+           
+
         </Grid>
     </ContentPage.Content>
 </ContentPage> 

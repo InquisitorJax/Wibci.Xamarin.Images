@@ -8,7 +8,7 @@ namespace Wibci.Xamarin.Images
         Jpg
     }
 
-    public interface IImageConverterCommand : IAsyncLogicCommand<ImageConvertContext, ConvertImageResult>
+    public interface IConvertImageCommand : IAsyncLogicCommand<ConvertImageContext, ConvertImageResult>
     {
     }
 
@@ -17,9 +17,9 @@ namespace Wibci.Xamarin.Images
         public byte[] ConvertedImage { get; set; }
     }
 
-    public class ImageConvertContext
+    public class ConvertImageContext
     {
-        public ImageConvertContext(byte[] image, ImageFormat format = ImageFormat.Png, int quality = 100)
+        public ConvertImageContext(byte[] image, ImageFormat format = ImageFormat.Png, int quality = 100)
         {
             Format = format;
             OriginalImage = image;

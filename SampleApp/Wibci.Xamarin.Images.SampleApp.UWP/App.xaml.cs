@@ -53,6 +53,8 @@ namespace Wibci.Xamarin.Images.SampleApp.UWP
 
                 DS.Register<IAnalyseImageCommand, UWPAnalyseImageCommand>();
                 DS.Register<IResizeImageCommand, UWPResizeImageCommand>();
+                DS.Register<IConvertImageCommand, UWPConvertImageCommand>();
+                DS.Register<IImageTools, UWPImageTools>();
                 CrossMedia.Current.Initialize();
 
                 XForms.Forms.Init(e);

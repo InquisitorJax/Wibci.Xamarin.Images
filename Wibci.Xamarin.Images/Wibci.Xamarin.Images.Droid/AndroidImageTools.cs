@@ -4,7 +4,7 @@ namespace Wibci.Xamarin.Images.Droid
 {
     public class AndroidImageTools : IImageTools
     {
-        public async Task<ConvertImageResult> ConvertImageAsync(ImageConvertContext context)
+        public async Task<ConvertImageResult> ConvertImageAsync(ConvertImageContext context)
         {
             var convertCommand = new AndroidConvertImageCommand();
             return await convertCommand.ExecuteAsync(context);
