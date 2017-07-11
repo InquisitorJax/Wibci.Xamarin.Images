@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using Plugin.Media;
 using UIKit;
+using Wibci.Xamarin.Forms.Converters;
 using Wibci.Xamarin.Images.iOS;
 using Xamarin.Forms;
 
@@ -26,6 +27,9 @@ namespace Wibci.Xamarin.Images.SampleApp.iOS
             DependencyService.Register<IConvertImageCommand, iOSConvertImageCommand>();
             DependencyService.Register<IImageTools, iOSImageTools>();
             CrossMedia.Current.Initialize();
+
+            //need instantiate converter so iOS knows about it
+            new ByteArrayToImageSourceConverter();
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

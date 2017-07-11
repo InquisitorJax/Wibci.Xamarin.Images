@@ -30,3 +30,7 @@
 /Wibci.Xamarin.Images.iOS/bin/Debug
 /SampleApp/Wibci.Xamarin.Images.SampleApp.Android/bin/Debug
 /.vs/slnWibciXamarinImages/v15
+/SampleApp/Wibci.Xamarin.Images.SampleApp/bin/Release
+/SampleApp/Wibci.Xamarin.Images.SampleApp.Android/bin/Release
+/SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/bin/iPhoneSimulator/Debug
+/SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/obj/iPhoneSimulator/Debug

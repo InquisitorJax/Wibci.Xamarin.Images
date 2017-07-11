@@ -46,6 +46,8 @@
       <string>Icon-Small@2x</string>
       <string>Icon-Small@3x</string>
     </array>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Please let me use pictures library?</string>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
   </dict>
