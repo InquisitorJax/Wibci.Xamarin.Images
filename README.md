@@ -9,6 +9,8 @@ See the Sample App for example usages.
 - ConvertImageCommand: Convert images between jpeg and png formats
 - ImageTools: Methods for all 3 above
 
+[Read more about it here](http://inquisitorjax.blogspot.co.za/2017/07/mobile-cross-platform-image.html)
+
 Sample code: Resize an image
 
 ```C#
