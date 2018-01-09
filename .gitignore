@@ -36,3 +36,5 @@
 /SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/obj/iPhoneSimulator/Debug
 /.vs
 /Wibci.Xamarin.Images.UWP/obj
+/SampleApp/Wibci.Xamarin.Images.SampleApp.UWP/obj
+/Wibci.Xamarin.Images.UWP/bin/x86/Release

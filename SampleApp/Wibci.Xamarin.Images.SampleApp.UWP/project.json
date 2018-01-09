@@ -2,13 +2,13 @@
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "Prism.Core": "6.3.0",
-    "Wibci.LogicCommand": "1.1.0",
-    "Wibcisoft.Xamarin.Forms.Converters": "1.0.2",
+    "Wibci.LogicCommand": "2.0.0",
+    "Wibci.Xamarin.Forms.Converters": "2.0.0",
     "Xam.Plugin.Media": "2.6.2",
-    "Xamarin.Forms": "2.3.4.247"
+    "Xamarin.Forms": "2.5.0.121934"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.10586": {}
   },
   "runtimes": {
     "win10-arm": {},

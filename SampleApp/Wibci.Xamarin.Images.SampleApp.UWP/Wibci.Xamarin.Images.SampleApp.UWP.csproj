@@ -159,14 +159,6 @@
       <Project>{a0055959-5f49-4306-b128-6f2fbe7710d7}</Project>
       <Name>Wibci.Xamarin.Images.UWP</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Wibci.Xamarin.Images\Wibci.Xamarin.Images\Wibci.Xamarin.Images.csproj">
-      <Project>{cf64ecc5-dcec-47e8-8b8b-9efa843abacd}</Project>
-      <Name>Wibci.Xamarin.Images</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Wibci.Xamarin.Images.SampleApp\Wibci.Xamarin.Images.SampleApp.csproj">
-      <Project>{3544c1a6-6d1e-4d25-b015-192b9e6427ad}</Project>
-      <Name>Wibci.Xamarin.Images.SampleApp</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

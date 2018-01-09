@@ -116,7 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Wibci.Xamarin.Images\Wibci.Xamarin.Images\Wibci.Xamarin.Images.csproj">
-      <Project>{cf64ecc5-dcec-47e8-8b8b-9efa843abacd}</Project>
+      <Project>{e2a72e48-d468-4351-bb1a-1b0a7ae71b06}</Project>
       <Name>Wibci.Xamarin.Images</Name>
     </ProjectReference>
   </ItemGroup>
