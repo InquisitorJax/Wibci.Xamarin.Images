@@ -34,3 +34,5 @@
 /SampleApp/Wibci.Xamarin.Images.SampleApp.Android/bin/Release
 /SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/bin/iPhoneSimulator/Debug
 /SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/obj/iPhoneSimulator/Debug
+/.vs
+/Wibci.Xamarin.Images.UWP/obj
