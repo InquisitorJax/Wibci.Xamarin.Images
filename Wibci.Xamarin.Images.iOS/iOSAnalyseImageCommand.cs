@@ -19,7 +19,16 @@ namespace Wibci.Xamarin.Images.iOS
 
                 retResult.Height = (uint)image.Size.Height;
                 retResult.Width = (uint)image.Size.Width;
-                retResult.Orientaion = retResult.Height > retResult.Width ? ImageOrientation.Portrait : ImageOrientation.Landscape;
+                retResult.SizeInKB = imageData.SizeInKB();
+
+                if (retResult.Width == retResult.Height)
+                {
+                    retResult.Orientaion = ImageOrientation.Square;
+                }
+                else
+                {
+                    retResult.Orientaion = retResult.Height > retResult.Width ? ImageOrientation.Portrait : ImageOrientation.Landscape;
+                }
 
                 image = null;
             }

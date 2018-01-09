@@ -17,7 +17,17 @@ namespace Wibci.Xamarin.Images.Droid
                 Bitmap originalImage = BitmapFactory.DecodeByteArray(imageData, 0, imageData.Length);
                 retResult.Height = (uint)originalImage.Height;
                 retResult.Width = (uint)originalImage.Width;
-                retResult.Orientaion = originalImage.Height > originalImage.Width ? ImageOrientation.Portrait : ImageOrientation.Landscape;
+                retResult.SizeInKB = imageData.SizeInKB();
+
+                if (originalImage.Width == originalImage.Height)
+                {
+                    retResult.Orientaion = ImageOrientation.Square;
+                }
+                else
+                {
+                    retResult.Orientaion = originalImage.Height > originalImage.Width ? ImageOrientation.Portrait : ImageOrientation.Landscape;
+                }
+
                 originalImage.Recycle();
                 originalImage = null;
             }

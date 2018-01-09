@@ -26,24 +26,15 @@ namespace Wibci.Xamarin.Images.UWP
                         var resizedStream = new InMemoryRandomAccessStream();
 
                         BitmapEncoder encoder = await BitmapEncoder.CreateForTranscodingAsync(resizedStream, decoder);
-                        double widthRatio = (double)request.Width / decoder.PixelWidth;
-                        double heightRatio = (double)request.Height / decoder.PixelHeight;
-
-                        double scaleRatio = Math.Min(widthRatio, heightRatio);
-
-                        if (request.Width == 0)
-                            scaleRatio = heightRatio;
-
-                        if (request.Height == 0)
-                            scaleRatio = widthRatio;
-
-                        uint aspectHeight = (uint)Math.Floor(decoder.PixelHeight * scaleRatio);
-                        uint aspectWidth = (uint)Math.Floor(decoder.PixelWidth * scaleRatio);
+                      
+                        var originalDim = new Dimension { Height = (uint)decoder.PixelHeight, Width = (uint)decoder.PixelWidth };
+                        var resizeRequestDim = new Dimension { Height = (uint)request.Height, Width = (uint)request.Width };
+                        var newDimensions = ImageHelper.Resize(originalDim, resizeRequestDim, request.UpScaleIfImageIsSmaller);
 
                         encoder.BitmapTransform.InterpolationMode = BitmapInterpolationMode.Linear;
 
-                        encoder.BitmapTransform.ScaledHeight = aspectHeight;
-                        encoder.BitmapTransform.ScaledWidth = aspectWidth;
+                        encoder.BitmapTransform.ScaledHeight = newDimensions.Height;
+                        encoder.BitmapTransform.ScaledWidth = newDimensions.Width;
 
                         await encoder.FlushAsync();
                         resizedStream.Seek(0);
@@ -53,8 +44,8 @@ namespace Wibci.Xamarin.Images.UWP
                         var result = new ResizeImageResult
                         {
                             ResizedImage = outBuffer,
-                            ResizedHeight = (int)aspectHeight,
-                            ResizedWidth = (int)aspectWidth
+                            ResizedHeight = (int)newDimensions.Height,
+                            ResizedWidth = (int)newDimensions.Width,
                         };
 
                         return result;

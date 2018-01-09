@@ -19,14 +19,22 @@ namespace Wibci.Xamarin.Images.UWP
                 IRandomAccessStream imageStream = memStream.AsRandomAccessStream();
                 var decoder = await BitmapDecoder.CreateAsync(imageStream);
 
-                retResult.Height = decoder.PixelHeight;
-                retResult.Width = decoder.PixelWidth;
-                retResult.Orientaion = retResult.Height > retResult.Width ? ImageOrientation.Portrait : ImageOrientation.Landscape;
+                retResult.Height = decoder.OrientedPixelHeight;
+                retResult.Width = decoder.OrientedPixelWidth;
+                retResult.SizeInKB = request.Image.SizeInKB();
+                if (retResult.Width == retResult.Height)
+                {
+                    retResult.Orientaion = ImageOrientation.Square;
+                }
+                else
+                {
+                    retResult.Orientaion = retResult.Height > retResult.Width ? ImageOrientation.Portrait : ImageOrientation.Landscape;
+                }
             }
             catch (Exception ex)
             {
 #if DEBUG
-                throw
+                throw;
 #else
                 retResult.Notification.Add("Analyse Image failed: " + ex.Message);
 #endif

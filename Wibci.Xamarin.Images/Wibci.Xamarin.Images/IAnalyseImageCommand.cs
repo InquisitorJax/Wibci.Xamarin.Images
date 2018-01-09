@@ -5,7 +5,8 @@ namespace Wibci.Xamarin.Images
     public enum ImageOrientation
     {
         Landscape,
-        Portrait
+        Portrait,
+        Square
     }
 
     public interface IAnalyseImageCommand : IAsyncLogicCommand<AnalyseImageContext, AnalyseImageResult>
@@ -22,5 +23,7 @@ namespace Wibci.Xamarin.Images
         public uint Height { get; set; }
         public ImageOrientation Orientaion { get; set; }
         public uint Width { get; set; }
+
+        public double SizeInKB { get; set; }
     }
 }

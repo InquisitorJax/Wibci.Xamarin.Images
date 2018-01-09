@@ -108,8 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UWPAnalyseImageCommand.cs" />
+    <Compile Include="UWPConvertImageCommand.cs" />
     <Compile Include="UWPImageResizeCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UWPImageTools.cs" />
     <EmbeddedResource Include="Properties\Wibci.Xamarin.Images.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
