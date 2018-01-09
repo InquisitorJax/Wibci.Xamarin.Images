@@ -19,3 +19,5 @@
 /Wibci.Xamarin.Images.iOS/obj/Release
 /Wibci.Xamarin.Images.UWP/bin/Release
 /Wibci.Xamarin.Images.UWP/obj/Release
+/.vs
+/Wibci.Xamarin.Images.UWP/obj/x86/Release
