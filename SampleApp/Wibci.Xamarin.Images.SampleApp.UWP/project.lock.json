@@ -2397,7 +2397,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.0": {
+      "Wibci.Xamarin.Images/2.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -4866,7 +4866,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.0": {
+      "Wibci.Xamarin.Images/2.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -7371,7 +7371,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.0": {
+      "Wibci.Xamarin.Images/2.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -9849,7 +9849,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.0": {
+      "Wibci.Xamarin.Images/2.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -12363,7 +12363,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.0": {
+      "Wibci.Xamarin.Images/2.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -14841,7 +14841,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.0": {
+      "Wibci.Xamarin.Images/2.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -17355,7 +17355,7 @@
           "build/netstandard1.0/Xamarin.Forms.targets": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.0": {
+      "Wibci.Xamarin.Images/2.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -17576,14 +17576,14 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/5.2.2": {
-      "sha512": "9UHv2YObWmcF8gqtBoDC4UW5gdHzFRtaZ5KtB9QKvCy+NC9LH1DMYyOI/ltupjVZlwYEulj3msjBXys9/QI6nw==",
+      "sha512": "eHccUiYTkiY8xeixRA0DV9mcFpi9GA9UzKt3v0d6NtNGrGefhmqwnb60PSWQPe49tXbxZaP0x+W0ghvj6hflHg==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/5.2.2",
       "files": [
-        "Microsoft.NETCore.UniversalWindowsPlatform.5.2.2.nupkg.sha512",
-        "Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt"
+        "dotnet_library_license.txt",
+        "microsoft.netcore.universalwindowsplatform.5.2.2.nupkg.sha512",
+        "microsoft.netcore.universalwindowsplatform.nuspec"
       ]
     },
     "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -24116,7 +24116,7 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "Wibci.Xamarin.Images/2.0.0": {
+    "Wibci.Xamarin.Images/2.0.2": {
       "type": "project",
       "path": "../../Wibci.Xamarin.Images/Wibci.Xamarin.Images/Wibci.Xamarin.Images.csproj",
       "msbuildProject": "../../Wibci.Xamarin.Images/Wibci.Xamarin.Images/Wibci.Xamarin.Images.csproj"
@@ -24139,8 +24139,7 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\inqui\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\inqui\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -24151,18 +24150,15 @@
       "packagesPath": "C:\\Users\\inqui\\.nuget\\packages\\",
       "outputPath": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\SampleApp\\Wibci.Xamarin.Images.SampleApp.UWP\\obj\\",
       "projectStyle": "ProjectJson",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
         "C:\\Users\\inqui\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin/": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.multitracks.com/nuget": {},
+        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
       },
       "frameworks": {
         "uap10.0.10586": {
