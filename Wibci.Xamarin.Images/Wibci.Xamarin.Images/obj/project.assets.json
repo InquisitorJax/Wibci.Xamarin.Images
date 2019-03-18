@@ -1892,10 +1892,11 @@
   },
   "packageFolders": {
     "C:\\Users\\inqui\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.0.2",
+    "version": "2.0.3",
     "restore": {
       "projectUniqueName": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images.csproj",
       "projectName": "Wibci.Xamarin.Images",
@@ -1904,11 +1905,13 @@
       "outputPath": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\inqui\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard1.0"
@@ -1916,8 +1919,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.multitracks.com/nuget": {},
-        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        "https://nuget.multitracks.com/nuget": {}
       },
       "frameworks": {
         "netstandard1.0": {

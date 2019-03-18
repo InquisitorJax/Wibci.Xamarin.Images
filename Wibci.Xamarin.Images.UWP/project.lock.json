@@ -2345,7 +2345,7 @@
           "lib/netstandard1.0/Wibci.LogicCommand.dll": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.2": {
+      "Wibci.Xamarin.Images/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -4753,7 +4753,7 @@
           "lib/netstandard1.0/Wibci.LogicCommand.dll": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.2": {
+      "Wibci.Xamarin.Images/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -7197,7 +7197,7 @@
           "lib/netstandard1.0/Wibci.LogicCommand.dll": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.2": {
+      "Wibci.Xamarin.Images/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -9614,7 +9614,7 @@
           "lib/netstandard1.0/Wibci.LogicCommand.dll": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.2": {
+      "Wibci.Xamarin.Images/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -12067,7 +12067,7 @@
           "lib/netstandard1.0/Wibci.LogicCommand.dll": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.2": {
+      "Wibci.Xamarin.Images/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -14484,7 +14484,7 @@
           "lib/netstandard1.0/Wibci.LogicCommand.dll": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.2": {
+      "Wibci.Xamarin.Images/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -16937,7 +16937,7 @@
           "lib/netstandard1.0/Wibci.LogicCommand.dll": {}
         }
       },
-      "Wibci.Xamarin.Images/2.0.2": {
+      "Wibci.Xamarin.Images/2.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.0",
         "dependencies": {
@@ -23412,7 +23412,7 @@
         "wibci.logiccommand.nuspec"
       ]
     },
-    "Wibci.Xamarin.Images/2.0.2": {
+    "Wibci.Xamarin.Images/2.0.3": {
       "type": "project",
       "path": "../Wibci.Xamarin.Images/Wibci.Xamarin.Images/Wibci.Xamarin.Images.csproj",
       "msbuildProject": "../Wibci.Xamarin.Images/Wibci.Xamarin.Images/Wibci.Xamarin.Images.csproj"
@@ -23426,7 +23426,8 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\inqui\\.nuget\\packages\\": {}
+    "C:\\Users\\inqui\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "restore": {
@@ -23437,15 +23438,18 @@
       "packagesPath": "C:\\Users\\inqui\\.nuget\\packages\\",
       "outputPath": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images.UWP\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\inqui\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.multitracks.com/nuget": {},
-        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        "https://nuget.multitracks.com/nuget": {}
       },
       "frameworks": {
         "uap10.0.10586": {

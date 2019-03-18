@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
-    <AssemblyVersion>2.0.2.0</AssemblyVersion>
-    <FileVersion>2.0.2.0</FileVersion>
+    <AssemblyVersion>2.0.3.0</AssemblyVersion>
+    <FileVersion>2.0.3.0</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.0.2</Version>
+    <Version>2.0.3</Version>
     <Authors>Malcolm Jack</Authors>
     <Company>Wibci Labs</Company>
     <Product>Value Converters for Xamarin Forms</Product>
@@ -16,7 +16,7 @@ BooleanToInvertedBoolean ; ByteArrayToImageSourceConverter ; EmptyStringToFillTe
     <RepositoryUrl>https://github.com/InquisitorJax/Wibci.LogicCommand</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Xamarin Forms, Converters</PackageTags>
-    <PackageReleaseNotes>.NET Standard</PackageReleaseNotes>
+    <PackageReleaseNotes>UWP asm version match</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
