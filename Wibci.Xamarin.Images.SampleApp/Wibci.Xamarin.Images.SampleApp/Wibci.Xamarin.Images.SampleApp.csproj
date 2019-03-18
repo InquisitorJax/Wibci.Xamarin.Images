@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="7.1.0.431" />
+    <PackageReference Include="Wibci.Xamarin.Forms.Converters" Version="2.0.0" />
+    <PackageReference Include="Wibci.Xamarin.Images" Version="2.0.3" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.220655" />
+  </ItemGroup>
+</Project>

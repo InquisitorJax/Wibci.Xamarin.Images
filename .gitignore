@@ -40,3 +40,14 @@
 /Wibci.Xamarin.Images.UWP/bin/x86/Release
 /SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/bin/iPhone/Release
 /Wibci.Xamarin.Images/Wibci.Xamarin.Images.Droid/obj
+/SampleApp_oldie/Wibci.Xamarin.Images.SampleApp/obj
+/SampleApp_oldie/Wibci.Xamarin.Images.SampleApp.iOS/obj/iPhone/Release
+/SampleApp_oldie/Wibci.Xamarin.Images.SampleApp.UWP/obj
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp/bin
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp/obj
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp.Android/bin
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp.Android/obj
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/bin/iPhoneSimulator/Debug
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp.iOS/obj
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp.UWP/bin/x86/Release
+/Wibci.Xamarin.Images.SampleApp/Wibci.Xamarin.Images.SampleApp.UWP/obj

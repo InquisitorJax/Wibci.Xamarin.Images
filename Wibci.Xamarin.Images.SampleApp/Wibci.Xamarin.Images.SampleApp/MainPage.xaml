@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+			 xmlns:converters="clr-namespace:Wibci.Xamarin.Forms.Converters;assembly=Wibci.Xamarin.Forms.Converters"
+             xmlns:local="clr-namespace:Wibci.Xamarin.Images.SampleApp"
+             x:Class="Wibci.Xamarin.Images.SampleApp.MainPage">
+
+	<Grid>
+		<Grid.Resources>
+			<ResourceDictionary>
+				<converters:ByteArrayToImageSourceConverter x:Key="bisc" />
+				<converters:BooleanToInvertedBooleanConverter x:Key="bib" />
+			</ResourceDictionary>
+		</Grid.Resources>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<StackLayout Padding="3,12,3,0">
+
+			<Button Command="{Binding SelectPictureCommand}"
+                        Image="ic_camera"
+                        Text="Choose Picture" />
+			<Image HeightRequest="100"
+                       HorizontalOptions="CenterAndExpand"
+                       Source="{Binding Logo,
+                                        Converter={StaticResource bisc},
+                                        ConverterParameter=icon}"
+                       WidthRequest="100" />
+
+			<Label Text="{Binding ImageHeight, StringFormat='Image Height: {0}'}}" />
+			<Label Text="{Binding ImageWidth, StringFormat='Image Width: {0}'}}" />
+			<Label Text="{Binding Orientation, StringFormat='Image Orientation: {0}'}}" />
+			<Label Text="{Binding Size, StringFormat='Size in KB: {0}'}}" />
+
+			<Label Margin="0, 20, 0,0" Text="New Image Dimension Limit" />
+			<Entry Keyboard="Numeric" Text="{Binding NewImageDimensionLimit}" />
+			<Label Text="Upscale if image is smaller than requested size" />
+			<Switch IsToggled="{Binding UpscaleImage}" />
+		</StackLayout>
+		<StackLayout Grid.Row="1">
+			<Button Command="{Binding ConvertImageCommand}" Text="Convert Jpeg to Png" />
+			<Image HeightRequest="100"
+                       HorizontalOptions="CenterAndExpand"
+                       Source="{Binding ConvertedLogo,
+                                        Converter={StaticResource bisc},
+                                        ConverterParameter=icon}"
+                       WidthRequest="100" />
+			<Label Text="{Binding ConvertedSize, StringFormat='Converted Size in KB: {0}'}}" />
+		</StackLayout>
+	</Grid>
+
+</ContentPage>
