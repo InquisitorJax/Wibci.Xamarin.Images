@@ -1892,7 +1892,7 @@
   },
   "packageFolders": {
     "C:\\Users\\inqui\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Xamarin\\NuGet\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -1905,7 +1905,7 @@
       "outputPath": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Xamarin\\NuGet\\",
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [

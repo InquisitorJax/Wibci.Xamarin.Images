@@ -107,6 +107,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitmapTools.cs" />
     <Compile Include="UWPAnalyseImageCommand.cs" />
     <Compile Include="UWPConvertImageCommand.cs" />
     <Compile Include="UWPImageResizeCommand.cs" />

@@ -23427,7 +23427,7 @@
   },
   "packageFolders": {
     "C:\\Users\\inqui\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Xamarin\\NuGet\\": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "restore": {
@@ -23439,7 +23439,7 @@
       "outputPath": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\inqui\\AppData\\Roaming\\NuGet\\NuGet.Config",

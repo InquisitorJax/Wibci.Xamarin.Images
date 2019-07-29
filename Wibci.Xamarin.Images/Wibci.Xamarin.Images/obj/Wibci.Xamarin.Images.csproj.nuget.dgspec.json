@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images.csproj": {}
+  },
+  "projects": {
+    "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images.csproj": {
+      "version": "2.0.3",
+      "restore": {
+        "projectUniqueName": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images.csproj",
+        "projectName": "Wibci.Xamarin.Images",
+        "projectPath": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images.csproj",
+        "packagesPath": "C:\\Users\\inqui\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV\\Git\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\Wibci.Xamarin.Images\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\inqui\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.multitracks.com/nuget": {}
+        },
+        "frameworks": {
+          "netstandard1.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            },
+            "Wibci.LogicCommand": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
