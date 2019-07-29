@@ -35,3 +35,4 @@ iOS
 UWP:
 `DependencyService.Register<IResizeImageCommand, UWPResizeImageCommand>();`
 
+For anyone looking for a much more comprehensive image library that is .NET standard compliant, check out <https://github.com/SixLabors/ImageSharp>
